@@ -162,5 +162,11 @@ namespace UI.Forms.Clients
             }
             
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            this.LoadGrid();
+            txtSearchClient.Clear();
+        }
     }
 }

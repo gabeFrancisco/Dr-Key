@@ -280,54 +280,44 @@ namespace UI.Services
 
         public static void SetServiceForm(ServiceForm serviceForm)
         {
-            if(config.Theme == Theme.DARK)
+            config = data.ReadData();
+            if (config.Theme == Theme.DARK)
             {
                 serviceForm.BackColor = Color.DimGray;
                 serviceForm.ForeColor = Color.Black;
-
-                serviceForm.btnAddService.BackColor = Color.DarkGray;
-                serviceForm.btnAddService.ForeColor = Color.DarkGray;
-                serviceForm.btnEditService.BackColor = Color.DarkGray;
-                serviceForm.btnEditService.ForeColor = Color.DarkGray;
-                serviceForm.btnDeleteService.BackColor = Color.DarkGray;
-                serviceForm.btnDeleteService.ForeColor = Color.DarkGray;
-                serviceForm.btnUpdate.BackColor = Color.DarkGray;
-                serviceForm.btnUpdate.ForeColor = Color.DarkGray;
-                serviceForm.pnToolBar.BackColor = Color.DarkGray;
-
-                serviceForm.panelBar.BackgroundImage = Resources.BARDARK;
 
                 serviceForm.dgvServices.BackgroundColor = Color.DimGray;
                 serviceForm.dgvServices.ForeColor = Color.White;
                 serviceForm.dgvServices.RowsDefaultCellStyle.BackColor = Color.DimGray;
                 serviceForm.dgvServices.RowsDefaultCellStyle.ForeColor = Color.White;
                 serviceForm.dgvServices.GridColor = Color.Gray;
+                serviceForm.btnSearch.ForeColor = Color.Black;
 
-                serviceForm.pnDivider.BackColor = Color.LightGray;
+                serviceForm.btnAddService.BackColor = Color.DimGray;
+                serviceForm.btnEditService.BackColor = Color.DimGray;
+                serviceForm.btnDeleteService.BackColor = Color.DimGray;
+                serviceForm.btnUpdate.BackColor = Color.DimGray;
+
+                serviceForm.gpService.ForeColor = Color.White;
+
             }
             else if(config.Theme == Theme.LIGHT)
             {
                 serviceForm.BackColor = Color.WhiteSmoke;
                 serviceForm.ForeColor = Color.Black;
 
-                serviceForm.btnAddService.BackColor = Color.WhiteSmoke;
-                serviceForm.btnAddService.ForeColor = Color.WhiteSmoke; 
-                serviceForm.btnEditService.BackColor = Color.WhiteSmoke;
-                serviceForm.btnEditService.ForeColor = Color.WhiteSmoke; 
-                serviceForm.btnDeleteService.BackColor = Color.WhiteSmoke;
-                serviceForm.btnDeleteService.ForeColor = Color.WhiteSmoke; 
-                serviceForm.pnToolBar.BackColor = Color.WhiteSmoke;
-                serviceForm.btnUpdate.BackColor = Color.WhiteSmoke;
-                serviceForm.btnUpdate.ForeColor = Color.WhiteSmoke;
-
-                serviceForm.panelBar.BackgroundImage = Resources.BARLIGHT;
-
                 serviceForm.dgvServices.BackgroundColor = Color.WhiteSmoke;
                 serviceForm.dgvServices.RowsDefaultCellStyle.BackColor = Color.WhiteSmoke;
                 serviceForm.dgvServices.RowsDefaultCellStyle.ForeColor = Color.Black;
                 serviceForm.dgvServices.GridColor = Color.LightGray;
 
-                serviceForm.pnDivider.BackColor = Color.DarkGray;
+                serviceForm.btnAddService.BackColor = Color.WhiteSmoke;
+                serviceForm.btnEditService.BackColor = Color.WhiteSmoke;
+                serviceForm.btnDeleteService.BackColor = Color.WhiteSmoke;
+                serviceForm.btnUpdate.BackColor = Color.WhiteSmoke;
+
+                serviceForm.gpService.ForeColor = Color.Black;
+
             }
 
             serviceForm.pnModel.BackColor = Color.FromName(config.Color);
@@ -362,12 +352,23 @@ namespace UI.Services
                 clientForm.dgvClient.BackgroundColor = Color.DimGray;
                 clientForm.dgvClient.ForeColor = Color.Black;
                 clientForm.btnSearch.ForeColor = Color.Black;
+
+                clientForm.dgvClient.BackgroundColor = Color.DimGray;
+                clientForm.dgvClient.ForeColor = Color.White;
+                clientForm.dgvClient.RowsDefaultCellStyle.BackColor = Color.DimGray;
+                clientForm.dgvClient.RowsDefaultCellStyle.ForeColor = Color.White;
+                clientForm.dgvClient.GridColor = Color.Gray;
             }
             else if (config.Theme == Theme.LIGHT)
             {
                 clientForm.BackColor = Color.WhiteSmoke;
                 clientForm.ForeColor = Color.Black;
                 clientForm.dgvClient.BackgroundColor = Color.WhiteSmoke;
+
+                clientForm.dgvClient.BackgroundColor = Color.WhiteSmoke;
+                clientForm.dgvClient.RowsDefaultCellStyle.BackColor = Color.WhiteSmoke;
+                clientForm.dgvClient.RowsDefaultCellStyle.ForeColor = Color.Black;
+                clientForm.dgvClient.GridColor = Color.LightGray;
             }
         }
 

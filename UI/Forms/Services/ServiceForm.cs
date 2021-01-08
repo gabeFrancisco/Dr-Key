@@ -176,5 +176,10 @@ namespace UI.Forms.Services
                 this.btnSearch_Click(sender, e);
             }
         }
+
+        private void pnToolBar_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
