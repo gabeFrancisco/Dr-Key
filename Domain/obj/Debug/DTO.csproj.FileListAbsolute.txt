@@ -1,0 +1,25 @@
+D:\Curso C#\Projeto KeyFinder\KeyFinder v1.2\DTO\bin\Debug\DTO.dll.config
+D:\Curso C#\Projeto KeyFinder\KeyFinder v1.2\DTO\bin\Debug\DTO.dll
+D:\Curso C#\Projeto KeyFinder\KeyFinder v1.2\DTO\bin\Debug\DTO.pdb
+D:\Curso C#\Projeto KeyFinder\KeyFinder v1.2\DTO\bin\Debug\EntityFramework.dll
+D:\Curso C#\Projeto KeyFinder\KeyFinder v1.2\DTO\bin\Debug\EntityFramework.SqlServer.dll
+D:\Curso C#\Projeto KeyFinder\KeyFinder v1.2\DTO\bin\Debug\EntityFramework.xml
+D:\Curso C#\Projeto KeyFinder\KeyFinder v1.2\DTO\bin\Debug\EntityFramework.SqlServer.xml
+D:\Curso C#\Projeto KeyFinder\KeyFinder v1.2\DTO\obj\Debug\DTO.csproj.CopyComplete
+D:\Curso C#\Projeto KeyFinder\KeyFinder v1.2\DTO\obj\Debug\DTO.dll
+D:\Curso C#\Projeto KeyFinder\KeyFinder v1.2\DTO\obj\Debug\DTO.pdb
+D:\Curso C#\Projeto KeyFinder\KeyFinder v1.2\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\Curso C#\Projeto KeyFinder\KeyFinder v0.9\DTO\bin\Debug\DTO.dll.config
+D:\Curso C#\Projeto KeyFinder\KeyFinder v0.9\DTO\bin\Debug\DTO.dll
+D:\Curso C#\Projeto KeyFinder\KeyFinder v0.9\DTO\bin\Debug\DTO.pdb
+D:\Curso C#\Projeto KeyFinder\KeyFinder v0.9\DTO\obj\Debug\DTO.dll
+D:\Curso C#\Projeto KeyFinder\KeyFinder v0.9\DTO\obj\Debug\DTO.pdb
+D:\Curso C#\Projeto KeyFinder\KeyFinder v0.9\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\Curso C#\Projeto KeyFinder\KeyFinder v0.9\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\KeyFinder Lite\DTO\bin\Debug\DTO.dll.config
+D:\KeyFinder Lite\DTO\bin\Debug\DTO.dll
+D:\KeyFinder Lite\DTO\bin\Debug\DTO.pdb
+D:\KeyFinder Lite\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\KeyFinder Lite\DTO\obj\Debug\DTO.dll
+D:\KeyFinder Lite\DTO\obj\Debug\DTO.pdb
+D:\KeyFinder Lite\DTO\obj\Debug\DTO.csprojAssemblyReference.cache

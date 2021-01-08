@@ -1,0 +1,21 @@
+D:\KeyFinder Lite\DTO\bin\Debug\Domain.dll.config
+D:\KeyFinder Lite\DTO\bin\Debug\Domain.dll
+D:\KeyFinder Lite\DTO\bin\Debug\Domain.pdb
+D:\KeyFinder Lite\DTO\obj\Debug\Domain.csprojAssemblyReference.cache
+D:\KeyFinder Lite\DTO\obj\Debug\Domain.csproj.CoreCompileInputs.cache
+D:\KeyFinder Lite\DTO\obj\Debug\Domain.dll
+D:\KeyFinder Lite\DTO\obj\Debug\Domain.pdb
+D:\KeyFinder Lite\Domain\bin\Debug\Domain.dll.config
+D:\KeyFinder Lite\Domain\bin\Debug\Domain.dll
+D:\KeyFinder Lite\Domain\bin\Debug\Domain.pdb
+D:\KeyFinder Lite\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
+D:\KeyFinder Lite\Domain\obj\Debug\Domain.dll
+D:\KeyFinder Lite\Domain\obj\Debug\Domain.pdb
+D:\KeyFinder Lite\Domain\obj\Debug\Domain.csprojAssemblyReference.cache
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Domain\bin\Debug\Domain.dll.config
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Domain\bin\Debug\Domain.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Domain\bin\Debug\Domain.pdb
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Domain\obj\Debug\Domain.csprojAssemblyReference.cache
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Domain\obj\Debug\Domain.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Domain\obj\Debug\Domain.pdb

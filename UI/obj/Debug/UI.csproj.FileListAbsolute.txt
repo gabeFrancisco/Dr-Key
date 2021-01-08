@@ -1,0 +1,180 @@
+D:\KeyFinder Lite\UI\bin\Debug\KeyFinder.exe.config
+D:\KeyFinder Lite\UI\bin\Debug\KeyFinder.exe.manifest
+D:\KeyFinder Lite\UI\bin\Debug\KeyFinder.application
+D:\KeyFinder Lite\UI\bin\Debug\KeyFinder.exe
+D:\KeyFinder Lite\UI\bin\Debug\KeyFinder.pdb
+D:\KeyFinder Lite\UI\bin\Debug\Domain.dll
+D:\KeyFinder Lite\UI\bin\Debug\Repository.dll
+D:\KeyFinder Lite\UI\bin\Debug\MySql.Data.dll
+D:\KeyFinder Lite\UI\bin\Debug\MySqlBackup.dll
+D:\KeyFinder Lite\UI\bin\Debug\Google.Protobuf.dll
+D:\KeyFinder Lite\UI\bin\Debug\Zstandard.Net.dll
+D:\KeyFinder Lite\UI\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\KeyFinder Lite\UI\bin\Debug\BouncyCastle.Crypto.dll
+D:\KeyFinder Lite\UI\bin\Debug\Ubiety.Dns.Core.dll
+D:\KeyFinder Lite\UI\bin\Debug\Renci.SshNet.dll
+D:\KeyFinder Lite\UI\bin\Debug\System.Buffers.dll
+D:\KeyFinder Lite\UI\bin\Debug\K4os.Compression.LZ4.dll
+D:\KeyFinder Lite\UI\bin\Debug\K4os.Hash.xxHash.dll
+D:\KeyFinder Lite\UI\bin\Debug\System.Memory.dll
+D:\KeyFinder Lite\UI\bin\Debug\System.Numerics.Vectors.dll
+D:\KeyFinder Lite\UI\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\KeyFinder Lite\UI\bin\Debug\Domain.pdb
+D:\KeyFinder Lite\UI\bin\Debug\Domain.dll.config
+D:\KeyFinder Lite\UI\bin\Debug\Repository.pdb
+D:\KeyFinder Lite\UI\bin\Debug\Repository.dll.config
+D:\KeyFinder Lite\UI\bin\Debug\MySql.Data.xml
+D:\KeyFinder Lite\UI\bin\Debug\Google.Protobuf.pdb
+D:\KeyFinder Lite\UI\bin\Debug\Google.Protobuf.xml
+D:\KeyFinder Lite\UI\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\KeyFinder Lite\UI\bin\Debug\Renci.SshNet.xml
+D:\KeyFinder Lite\UI\bin\Debug\System.Buffers.xml
+D:\KeyFinder Lite\UI\bin\Debug\K4os.Compression.LZ4.xml
+D:\KeyFinder Lite\UI\bin\Debug\K4os.Hash.xxHash.xml
+D:\KeyFinder Lite\UI\bin\Debug\System.Memory.xml
+D:\KeyFinder Lite\UI\bin\Debug\System.Numerics.Vectors.xml
+D:\KeyFinder Lite\UI\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\KeyFinder Lite\UI\obj\Debug\UI.csprojAssemblyReference.cache
+D:\KeyFinder Lite\UI\obj\Debug\UI.Forms.Clients.AddClientForm.resources
+D:\KeyFinder Lite\UI\obj\Debug\UI.Forms.Clients.ClientForm.resources
+D:\KeyFinder Lite\UI\obj\Debug\UI.Forms.Clients.ShowClientForm.resources
+D:\KeyFinder Lite\UI\obj\Debug\UI.Forms.Login.LoginScreen.resources
+D:\KeyFinder Lite\UI\obj\Debug\UI.AboutForm.resources
+D:\KeyFinder Lite\UI\obj\Debug\UI.AddKeyForm.resources
+D:\KeyFinder Lite\UI\obj\Debug\UI.ConfigurationForm.resources
+D:\KeyFinder Lite\UI\obj\Debug\UI.KeyInfo.resources
+D:\KeyFinder Lite\UI\obj\Debug\UI.ManagerForm.resources
+D:\KeyFinder Lite\UI\obj\Debug\UI.Forms.Services.AddServiceForm.resources
+D:\KeyFinder Lite\UI\obj\Debug\UI.Forms.Services.ServiceForm.resources
+D:\KeyFinder Lite\UI\obj\Debug\UI.Forms.Services.ShowService.resources
+D:\KeyFinder Lite\UI\obj\Debug\UI.Properties.Resources.resources
+D:\KeyFinder Lite\UI\obj\Debug\UI.csproj.GenerateResource.cache
+D:\KeyFinder Lite\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
+D:\KeyFinder Lite\UI\obj\Debug\KeyFinder.exe.manifest
+D:\KeyFinder Lite\UI\obj\Debug\KeyFinder.application
+D:\KeyFinder Lite\UI\obj\Debug\UI.csproj.CopyComplete
+D:\KeyFinder Lite\UI\obj\Debug\KeyFinder.exe
+D:\KeyFinder Lite\UI\obj\Debug\KeyFinder.pdb
+D:\KeyFinder Lite\UI\obj\Debug\UI.Forms.User.UserForm.resources
+D:\KeyFinder Lite\UI\bin\Debug\Services.dll
+D:\KeyFinder Lite\UI\bin\Debug\Services.pdb
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\Domain.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\Repository.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\Services.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\MySql.Data.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\MySqlBackup.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\Google.Protobuf.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\Zstandard.Net.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\Renci.SshNet.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\System.Buffers.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\System.Memory.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\Domain.pdb
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\Domain.dll.config
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\Repository.pdb
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\Repository.dll.config
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\Services.pdb
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\MySql.Data.xml
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\Google.Protobuf.pdb
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\Google.Protobuf.xml
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\Renci.SshNet.xml
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\System.Buffers.xml
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\System.Memory.xml
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\obj\Debug\UI.csprojAssemblyReference.cache
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\obj\Debug\UI.Forms.Clients.AddClientForm.resources
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\obj\Debug\UI.Forms.Clients.ClientForm.resources
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\obj\Debug\UI.Forms.Clients.ShowClientForm.resources
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\obj\Debug\UI.Forms.Login.LoginScreen.resources
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\obj\Debug\UI.AboutForm.resources
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\obj\Debug\UI.AddKeyForm.resources
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\obj\Debug\UI.ConfigurationForm.resources
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\obj\Debug\UI.KeyInfo.resources
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\obj\Debug\UI.ManagerForm.resources
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\obj\Debug\UI.Forms.Services.AddServiceForm.resources
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\obj\Debug\UI.Forms.Services.ServiceForm.resources
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\obj\Debug\UI.Forms.Services.ShowService.resources
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\obj\Debug\UI.Forms.User.UserForm.resources
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\obj\Debug\UI.Properties.Resources.resources
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\obj\Debug\UI.csproj.GenerateResource.cache
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\obj\Debug\UI.csproj.CopyComplete
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\DrKey.exe.config
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\DrKey.exe.manifest
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\DrKey.application
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\DrKey.exe
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\bin\Debug\DrKey.pdb
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\obj\Debug\DrKey.exe.manifest
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\obj\Debug\DrKey.application
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\obj\Debug\DrKey.exe
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\UI\obj\Debug\DrKey.pdb
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\DrKey.exe.config
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\DrKey.exe.manifest
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\DrKey.application
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\DrKey.exe
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\DrKey.pdb
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\Domain.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\Repository.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\Services.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\MySql.Data.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\MySqlBackup.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\Google.Protobuf.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\Zstandard.Net.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\Renci.SshNet.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\System.Buffers.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\System.Memory.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\Domain.pdb
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\Domain.dll.config
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\Repository.pdb
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\Repository.dll.config
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\Services.pdb
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\MySql.Data.xml
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\Google.Protobuf.pdb
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\Google.Protobuf.xml
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\Renci.SshNet.xml
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\System.Buffers.xml
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\System.Memory.xml
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\obj\Debug\UI.csprojAssemblyReference.cache
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\obj\Debug\UI.Forms.Clients.AddClientForm.resources
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\obj\Debug\UI.Forms.Clients.ClientForm.resources
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\obj\Debug\UI.Forms.Clients.ShowClientForm.resources
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\obj\Debug\UI.Forms.Login.LoginScreen.resources
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\obj\Debug\UI.AboutForm.resources
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\obj\Debug\UI.AddKeyForm.resources
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\obj\Debug\UI.ConfigurationForm.resources
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\obj\Debug\UI.KeyInfo.resources
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\obj\Debug\UI.ManagerForm.resources
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\obj\Debug\UI.Forms.Services.AddServiceForm.resources
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\obj\Debug\UI.Forms.Services.ServiceForm.resources
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\obj\Debug\UI.Forms.Services.ShowService.resources
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\obj\Debug\UI.Forms.User.UserForm.resources
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\obj\Debug\UI.Properties.Resources.resources
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\obj\Debug\UI.csproj.GenerateResource.cache
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\obj\Debug\DrKey.exe.manifest
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\obj\Debug\DrKey.application
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\obj\Debug\UI.csproj.CopyComplete
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\obj\Debug\DrKey.exe
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\obj\Debug\DrKey.pdb

@@ -1,0 +1,74 @@
+D:\KeyFinder Lite\Repository\obj\Debug\Repository.csprojAssemblyReference.cache
+D:\KeyFinder Lite\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+D:\KeyFinder Lite\Repository\bin\Debug\Repository.dll.config
+D:\KeyFinder Lite\Repository\bin\Debug\Repository.dll
+D:\KeyFinder Lite\Repository\bin\Debug\Repository.pdb
+D:\KeyFinder Lite\Repository\bin\Debug\BouncyCastle.Crypto.dll
+D:\KeyFinder Lite\Repository\bin\Debug\Domain.dll
+D:\KeyFinder Lite\Repository\bin\Debug\Google.Protobuf.dll
+D:\KeyFinder Lite\Repository\bin\Debug\K4os.Compression.LZ4.dll
+D:\KeyFinder Lite\Repository\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\KeyFinder Lite\Repository\bin\Debug\K4os.Hash.xxHash.dll
+D:\KeyFinder Lite\Repository\bin\Debug\MySql.Data.dll
+D:\KeyFinder Lite\Repository\bin\Debug\MySqlBackup.dll
+D:\KeyFinder Lite\Repository\bin\Debug\Renci.SshNet.dll
+D:\KeyFinder Lite\Repository\bin\Debug\System.Buffers.dll
+D:\KeyFinder Lite\Repository\bin\Debug\System.Memory.dll
+D:\KeyFinder Lite\Repository\bin\Debug\System.Numerics.Vectors.dll
+D:\KeyFinder Lite\Repository\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\KeyFinder Lite\Repository\bin\Debug\Ubiety.Dns.Core.dll
+D:\KeyFinder Lite\Repository\bin\Debug\Zstandard.Net.dll
+D:\KeyFinder Lite\Repository\bin\Debug\Domain.pdb
+D:\KeyFinder Lite\Repository\bin\Debug\Domain.dll.config
+D:\KeyFinder Lite\Repository\bin\Debug\Google.Protobuf.xml
+D:\KeyFinder Lite\Repository\bin\Debug\K4os.Compression.LZ4.xml
+D:\KeyFinder Lite\Repository\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\KeyFinder Lite\Repository\bin\Debug\K4os.Hash.xxHash.xml
+D:\KeyFinder Lite\Repository\bin\Debug\MySql.Data.xml
+D:\KeyFinder Lite\Repository\bin\Debug\Renci.SshNet.xml
+D:\KeyFinder Lite\Repository\bin\Debug\System.Buffers.xml
+D:\KeyFinder Lite\Repository\bin\Debug\System.Memory.xml
+D:\KeyFinder Lite\Repository\bin\Debug\System.Numerics.Vectors.xml
+D:\KeyFinder Lite\Repository\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\KeyFinder Lite\Repository\obj\Debug\Repository.csproj.CopyComplete
+D:\KeyFinder Lite\Repository\obj\Debug\Repository.dll
+D:\KeyFinder Lite\Repository\obj\Debug\Repository.pdb
+D:\KeyFinder Lite\Repository\bin\Debug\Microsoft.Data.Sqlite.dll
+D:\KeyFinder Lite\Repository\bin\Debug\Microsoft.Data.Sqlite.xml
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\bin\Debug\Repository.dll.config
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\bin\Debug\Repository.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\bin\Debug\Repository.pdb
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\bin\Debug\Domain.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\bin\Debug\Google.Protobuf.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\bin\Debug\Microsoft.Data.Sqlite.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\bin\Debug\MySql.Data.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\bin\Debug\MySqlBackup.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\bin\Debug\Renci.SshNet.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\bin\Debug\System.Buffers.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\bin\Debug\System.Memory.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\bin\Debug\Zstandard.Net.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\bin\Debug\Domain.pdb
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\bin\Debug\Domain.dll.config
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\bin\Debug\Google.Protobuf.xml
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\bin\Debug\Microsoft.Data.Sqlite.xml
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\bin\Debug\MySql.Data.xml
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\bin\Debug\Renci.SshNet.xml
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\bin\Debug\System.Buffers.xml
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\bin\Debug\System.Memory.xml
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\obj\Debug\Repository.csprojAssemblyReference.cache
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\obj\Debug\Repository.csproj.CopyComplete
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\obj\Debug\Repository.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Repository\obj\Debug\Repository.pdb
