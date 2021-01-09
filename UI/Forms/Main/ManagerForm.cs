@@ -1,8 +1,5 @@
 ﻿using Domain.Entities;
-using Repository.Contracts;
-using Repository.DataAcess;
-using Repository.Repositories;
-using Services.Login;
+using Business.Login;
 using System;
 using System.Drawing;
 using System.IO;
@@ -11,13 +8,13 @@ using UI.Forms.Clients;
 using UI.Forms.Services;
 using UI.Forms.User;
 using UI.Services;
+using Business.Keys;
 
 namespace UI
 {
     public partial class ManagerForm : Form
     {
         //Repository object
-        static IKeyRepository _keyRepository;
 
         //The id of the selected key in the datagridview
         static int _keyid;
@@ -29,6 +26,7 @@ namespace UI
         static string _searchManufactor;
         static string _searchType;
         static string _searchService;
+        private KeyService _keyService;
 
         public ManagerForm()
         {
@@ -46,7 +44,7 @@ namespace UI
         {
             LoginService.LoadData();
             tsUser.Text = LoginService._memory.User.UserName.ToString();
-            _keyRepository = new KeyRepository();
+            _keyService = new KeyService();
             
             #region-COLUMNS STYLE
             
@@ -106,7 +104,7 @@ namespace UI
         // This function reloads the datagridview every time is called
         public void LoadGrid()
         {
-            dgvKey.DataSource = _keyRepository.ReturnTable();
+            dgvKey.DataSource = _keyService.ReturnTable();
             //SaveDb();
         }
         

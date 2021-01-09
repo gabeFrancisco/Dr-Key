@@ -1,6 +1,4 @@
 ﻿using Domain.Entities;
-using Repository.Contracts;
-using Repository.Repositories;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -10,8 +8,6 @@ namespace UI.Forms.Services
 {
     public partial class ServiceForm : Form
     {
-        private IServiceRepository _repository = new ServiceRepository();
-
         //This integer stores the index of the selected row in services datagridview
         private int _index = 0;
 

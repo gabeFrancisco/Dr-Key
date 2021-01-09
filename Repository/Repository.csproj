@@ -110,6 +110,7 @@
     <Compile Include="Repositories\ClientRepository.cs" />
     <Compile Include="Repositories\KeyRepository.cs" />
     <Compile Include="DataAcess\SerialObjects\ConfigData.cs" />
+    <Compile Include="Repositories\LoginService.cs" />
     <Compile Include="Repositories\ServiceRepository.cs" />
   </ItemGroup>
   <ItemGroup>

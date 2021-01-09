@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{5E02BCBB-30A7-4DD3-930B-06A2C5691DF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{578DF5AC-156A-46C3-AEE5-B792D5127551}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{6410D8D9-F123-419A-82CB-6CBB637CA43A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{5E02BCBB-30A7-4DD3-930B-06A2C5691DF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E02BCBB-30A7-4DD3-930B-06A2C5691DF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E02BCBB-30A7-4DD3-930B-06A2C5691DF8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{578DF5AC-156A-46C3-AEE5-B792D5127551}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{578DF5AC-156A-46C3-AEE5-B792D5127551}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{578DF5AC-156A-46C3-AEE5-B792D5127551}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{578DF5AC-156A-46C3-AEE5-B792D5127551}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6410D8D9-F123-419A-82CB-6CBB637CA43A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6410D8D9-F123-419A-82CB-6CBB637CA43A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6410D8D9-F123-419A-82CB-6CBB637CA43A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6410D8D9-F123-419A-82CB-6CBB637CA43A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
