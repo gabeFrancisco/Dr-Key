@@ -7,10 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Business.Services;
 using Domain.Entities;
 using Domain.Enums;
-using Repository.Contracts;
-using Repository.Repositories;
 using UI.Services;
 
 namespace UI
@@ -27,7 +26,7 @@ namespace UI
         static bool _isEdit = false;
 
         //Repository object
-        static IKeyRepository _keyRepository = new KeyRepository();
+        static KeyService _keyService;
 
         public KeyInfo()
         {
@@ -37,6 +36,7 @@ namespace UI
         public KeyInfo(ManagerForm manager, Key dto, bool isEdit)
         {
             InitializeComponent();
+            _keyService = new KeyService();
 
             _managerForm = manager;
             _dto = dto;
@@ -144,7 +144,7 @@ namespace UI
                             Observation = observation
                         };
 
-                        _keyRepository.Update(dto);
+                        _keyService.UpdateKey(dto);
 
                         MessageBox.Show("Chave editada com sucesso!",
                             "Atualização de chave",
@@ -232,10 +232,8 @@ namespace UI
         {
             try
             {
-                Key key = _keyRepository.GetById(_dto.Id);
-                key.AddQuantity();
-                _keyRepository.AddQuantity(key);
-                _dto = _keyRepository.GetById(Convert.ToInt32(lbId.Text));
+                _keyService.AddQuantity(_dto);
+                _dto = _keyService.ReadKey(Convert.ToInt32(lbId.Text));
                 txtQte.Text = _dto.Quantity.ToString();
                 _managerForm.LoadGrid();
                 _managerForm.LoadCard();
@@ -250,10 +248,7 @@ namespace UI
         {
             try
             {
-                Key key = _keyRepository.GetById(_dto.Id);
-                key.SubtractQuantity();
-                _keyRepository.SubtractQuantity(key);
-                _dto = _keyRepository.GetById(Convert.ToInt32(lbId.Text));
+                _dto = _keyService.ReadKey(Convert.ToInt32(lbId.Text));
                 txtQte.Text = _dto.Quantity.ToString();
                 _managerForm.LoadGrid();
                 _managerForm.LoadCard();

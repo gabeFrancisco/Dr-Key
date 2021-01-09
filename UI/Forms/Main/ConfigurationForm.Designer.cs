@@ -52,15 +52,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.gbExport = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.gbTheme.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.gbExport.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbTheme
@@ -249,7 +245,7 @@
             // btnOk
             // 
             this.btnOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOk.Location = new System.Drawing.Point(184, 398);
+            this.btnOk.Location = new System.Drawing.Point(182, 307);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(121, 23);
             this.btnOk.TabIndex = 3;
@@ -260,7 +256,7 @@
             // btnCancel
             // 
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Location = new System.Drawing.Point(311, 398);
+            this.btnCancel.Location = new System.Drawing.Point(309, 307);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(126, 23);
             this.btnCancel.TabIndex = 2;
@@ -299,43 +295,11 @@
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
-            // gbExport
-            // 
-            this.gbExport.Controls.Add(this.button1);
-            this.gbExport.Controls.Add(this.label4);
-            this.gbExport.Location = new System.Drawing.Point(170, 307);
-            this.gbExport.Name = "gbExport";
-            this.gbExport.Size = new System.Drawing.Size(274, 83);
-            this.gbExport.TabIndex = 4;
-            this.gbExport.TabStop = false;
-            this.gbExport.Text = "Exportar";
-            // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button1.Location = new System.Drawing.Point(47, 47);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(170, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Exportar arquivo *.sql";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(68, 24);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(129, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Exportar banco de dados:";
-            // 
             // ConfigurationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(458, 431);
-            this.Controls.Add(this.gbExport);
+            this.ClientSize = new System.Drawing.Size(458, 343);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.gbTheme);
             this.Controls.Add(this.btnCancel);
@@ -352,8 +316,6 @@
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.gbExport.ResumeLayout(false);
-            this.gbExport.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -373,9 +335,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox cbFont;
         private System.Windows.Forms.Label label3;
-        internal System.Windows.Forms.GroupBox gbExport;
-        internal System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label4;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.CheckBox rdId;
         private System.Windows.Forms.CheckBox rdModel;

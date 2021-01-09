@@ -1,6 +1,6 @@
-﻿using Domain.Entities;
+﻿using Business.Services;
+using Domain.Entities;
 using Domain.Enums;
-using Repository.DataAcess.SerialObjects;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -13,11 +13,11 @@ namespace UI.Services
     public static class ThemeSetup
     {
         static Configuration config = new Configuration();
-        static ConfigData data = new ConfigData();
+        private static readonly ConfigurationService data = new ConfigurationService();
 
         public static void SetManagerForm(ManagerForm managerForm)
         {
-            config = data.ReadData();
+            config = data.Read();
             if (config.Theme == Theme.DARK)
             {
                 managerForm.BackColor = Color.DimGray;
@@ -173,7 +173,7 @@ namespace UI.Services
 
         public static void SetConfigurationForm(ConfigurationForm configForm)
         {
-            config = data.ReadData();
+            config = data.Read();
 
             configForm.btnOk.BackColor = Color.FromName(config.Color);
             configForm.btnCancel.BackColor = Color.FromName(config.Color);
@@ -184,7 +184,6 @@ namespace UI.Services
                 configForm.ForeColor = Color.White;
 
                 configForm.gbTheme.ForeColor = Color.White;
-                configForm.gbExport.ForeColor = Color.White;
 
                 configForm.btnOk.ForeColor = Color.Black;
                 configForm.btnCancel.ForeColor = Color.Black;
@@ -196,7 +195,6 @@ namespace UI.Services
                 configForm.ForeColor = Color.Black;
 
                 configForm.gbTheme.ForeColor = Color.Black;
-                configForm.gbExport.ForeColor = Color.Black;
 
                 configForm.btnOk.ForeColor = Color.Black;
                 configForm.btnCancel.ForeColor = Color.Black;
@@ -205,7 +203,7 @@ namespace UI.Services
 
         public static void SetKeyForm(KeyInfo keyForm)
         {
-            config = data.ReadData();
+            config = data.Read();
 
             keyForm.panelId.BackColor = Color.FromName(config.Color);
             keyForm.panelManufactor.BackColor = Color.FromName(config.Color);
@@ -249,7 +247,7 @@ namespace UI.Services
 
         public static void SetAddKeyForm(AddKeyForm addKey)
         {
-            config = data.ReadData();
+            config = data.Read();
             addKey.btnAddKey.BackColor = Color.FromName(config.Color);
 
             if(config.Theme == Theme.DARK)
@@ -280,7 +278,7 @@ namespace UI.Services
 
         public static void SetServiceForm(ServiceForm serviceForm)
         {
-            config = data.ReadData();
+            config = data.Read();
             if (config.Theme == Theme.DARK)
             {
                 serviceForm.BackColor = Color.DimGray;
@@ -340,7 +338,7 @@ namespace UI.Services
 
         public static void SetClientForm(ClientForm clientForm)
         {
-            config = data.ReadData();
+            config = data.Read();
             clientForm.dgvClient.RowsDefaultCellStyle.SelectionBackColor = Color.FromName(config.Color);
             clientForm.btnSearch.BackColor = Color.FromName(config.Color);
 
@@ -374,7 +372,7 @@ namespace UI.Services
 
         public static void SetShowClientForm(ShowClientForm showClientForm)
         {
-            config = data.ReadData();
+            config = data.Read();
             showClientForm.btnEdit.BackColor = Color.FromName(config.Color);
 
             if (config.Theme == Theme.DARK)

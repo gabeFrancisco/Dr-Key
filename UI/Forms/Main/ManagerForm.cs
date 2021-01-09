@@ -8,7 +8,7 @@ using UI.Forms.Clients;
 using UI.Forms.Services;
 using UI.Forms.User;
 using UI.Services;
-using Business.Keys;
+using Business.Services;
 
 namespace UI
 {
@@ -90,7 +90,7 @@ namespace UI
 
             dgvKey.Columns[11].Visible = false;
 
-            if (_keyRepository.ReturnTable().Rows.Count > 0)
+            if (_keyService.ReturnTable().Rows.Count > 0)
             {
                 dgvKey.Rows[_index].Selected = true;
                 this.UpdateKeyNumber();
@@ -107,6 +107,13 @@ namespace UI
             dgvKey.DataSource = _keyService.ReturnTable();
             //SaveDb();
         }
+
+        public int GetIdByCell(DataGridViewCellEventArgs e)
+        {
+            int index = e.RowIndex;
+            DataGridViewRow selectedIndex = dgvKey.Rows[index];
+            return int.Parse(selectedIndex.Cells[0].Value.ToString());
+        }
         
         // When this function is called, it opens the KeyInfo windows
         // If the key image path is registered but the image cannot be found, it ignores
@@ -115,17 +122,12 @@ namespace UI
         {
             try
             {
-                int index = e.RowIndex;
-                DataGridViewRow selectedIndex = dgvKey.Rows[index];
-                int id = int.Parse(selectedIndex.Cells[0].Value.ToString());
-                Key dto = _keyRepository.GetById(id);
-
-                KeyInfo keyInfo = new KeyInfo(this, dto, false);
+                KeyInfo keyInfo = new KeyInfo(this, _keyService.ReadKey(this.GetIdByCell(e)),false);
                 keyInfo.ShowDialog();
             }
             catch(FileNotFoundException) 
             { 
-                _keyRepository.UpdateImage(_keyid); 
+                _keyService.UpdateImage(_keyid); 
                 this.dgvKey_CellDoubleClick(sender, e);
             }
             catch(ArgumentOutOfRangeException) { }
@@ -144,7 +146,7 @@ namespace UI
                       MessageBoxButtons.YesNo,
                       MessageBoxIcon.Question) == DialogResult.Yes)
                     {
-                        _keyRepository.Remove(_keyid);
+                        _keyService.DeleteKey(_keyid);
                         MessageBox.Show($"A chave {tsKeys.Text} foi removida com sucesso!",
                             "Remover Chave",
                             MessageBoxButtons.OK,
@@ -168,7 +170,7 @@ namespace UI
         //to the string in the botton toolbar
         public void UpdateKeyNumber()
         {
-            tsNKeys.Text = Convert.ToString(_keyRepository.KeyNumbers());
+            tsNKeys.Text = Convert.ToString(_keyService.GetTotalKeyNumbers());
         }
 
          
@@ -177,16 +179,12 @@ namespace UI
         private void dgvKey_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try
-
             {
-                _index = e.RowIndex;
-                DataGridViewRow selectedRow = dgvKey.Rows[_index];
-
-                int id = Convert.ToInt32(selectedRow.Cells[0].Value.ToString());
-                string model = selectedRow.Cells[2].Value.ToString();
+                int id = this.GetIdByCell(e);
+                Key key = _keyService.ReadKey(id);
                 _keyid = id;
 
-                tsKeys.Text = id.ToString("D4") + " - " + model;
+                tsKeys.Text = id.ToString("D4") + " - " + key.Model;
 
                 LoadCard();
             }
@@ -210,7 +208,7 @@ namespace UI
                 if (!String.IsNullOrEmpty(txtSearch.Text))
                 {
                     string search = txtSearch.Text;
-                    dgvKey.DataSource = _keyRepository.SearchTable(search);
+                    dgvKey.DataSource = _keyService.SearchTable(search);
                 }
                 else
                 {
@@ -223,6 +221,8 @@ namespace UI
             }
         }
 
+        #region Search
+
         //This methdos loads the key datagrid with a filter applied to 
         //the key type when the index of the combo box is selected
         private void cbSearchType_SelectedIndexChanged(object sender, EventArgs e)
@@ -230,7 +230,7 @@ namespace UI
             try
             {
                 _searchType = cbSearchType.Text;
-                this.dgvKey.DataSource = _keyRepository.SearchFilter(_searchManufactor, _searchType, _searchService);
+                this.dgvKey.DataSource = _keyService.SearchFilter(_searchManufactor, _searchType, _searchService);
             }
             catch (Exception ex)
             {
@@ -244,13 +244,29 @@ namespace UI
             try
             {
                 _searchManufactor = cbSearchManufactor.Text;
-                this.dgvKey.DataSource = _keyRepository.SearchFilter(_searchManufactor, _searchType, _searchService);
+                this.dgvKey.DataSource = _keyService.SearchFilter(_searchManufactor, _searchType, _searchService);
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Erro " + ex.Message);
             }
         }
+
+        //Same with Service type
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                _searchService = cbServiceType.Text;
+                this.dgvKey.DataSource = _keyService.SearchFilter(_searchManufactor, _searchType, _searchService);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro " + ex.Message);
+            }
+        }
+
+        #endregion
 
         private void sobreOProgramaToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -270,9 +286,7 @@ namespace UI
         {
             try
             {
-                Key dto = _keyRepository.GetById(_keyid);
-
-                KeyInfo keyInfo = new KeyInfo(this, dto, true);
+                KeyInfo keyInfo = new KeyInfo(this, _keyService.ReadKey(_keyid), true);
                 keyInfo.EditMode(true);
                 keyInfo.ShowDialog();
             }
@@ -300,9 +314,7 @@ namespace UI
         {
             try
             {
-                Key dto = _keyRepository.GetById(_keyid);
-
-                KeyInfo keyInfo = new KeyInfo(this, dto, true);
+                KeyInfo keyInfo = new KeyInfo(this, _keyService.ReadKey(_keyid), true);
                 keyInfo.ShowDialog();
                 keyInfo.btnEdit_Click(null, e);
                 keyInfo.EditMode(true);
@@ -363,7 +375,7 @@ namespace UI
         {
             try
             {
-                Key key = _keyRepository.GetById(_keyid);
+                Key key = _keyService.ReadKey(_keyid);
 
                 BrandLoader.LoadBrandImage(pctManufactor, key.Manufactor);
                 lbModel.Text = key.Model;
@@ -381,10 +393,8 @@ namespace UI
         private void editarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
-            {
-                Key dto = _keyRepository.GetById(_keyid);
-
-                KeyInfo keyInfo = new KeyInfo(this, dto, true);
+            { 
+                KeyInfo keyInfo = new KeyInfo(this, _keyService.ReadKey(_keyid), true);
                 keyInfo.ShowDialog();
                 keyInfo.btnEdit_Click(null, e);
                 keyInfo.EditMode(true);
@@ -399,9 +409,9 @@ namespace UI
         {
             try
             {
-                Key key = _keyRepository.GetById(_keyid);
+                Key key = _keyService.ReadKey(_keyid);
                 key.AddQuantity();
-                _keyRepository.AddQuantity(key);
+                _keyService.AddQuantity(key);
                 LoadGrid();
                 LoadCard();
             }
@@ -415,28 +425,15 @@ namespace UI
         {
             try
             {
-                Key key = _keyRepository.GetById(_keyid);
+                Key key = _keyService.ReadKey(_keyid);
                 key.SubtractQuantity();
-                _keyRepository.SubtractQuantity(key);
+                _keyService.SubtractQuantity(key);
                 LoadGrid();
                 LoadCard();
             }
             catch
             {
                 MessageBox.Show("Selecione uma chave para alterar quantidade!");
-            }
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                _searchService = cbServiceType.Text;
-                this.dgvKey.DataSource = _keyRepository.SearchFilter(_searchManufactor, _searchType, _searchService);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro " + ex.Message);
             }
         }
 

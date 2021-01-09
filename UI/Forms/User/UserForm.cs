@@ -1,24 +1,22 @@
-﻿using Repository.DataAcess.SerialObjects;
-using System;
+﻿using System;
 using System.Windows.Forms;
+using Business.Login;
 using Domain.Entities.Security;
 
 namespace UI.Forms.User
 {
     public partial class UserForm : Form
     {
-        private LoginData _loginData;
-        private LoginMemory _memory;
-
+        private readonly LoginMemory _memory;
         public UserForm()
         {
             InitializeComponent();
+            LoginService.LoadData();
+            _memory = LoginService._memory;
         }
 
         private void UserForm_Load(object sender, EventArgs e)
         {
-            _loginData = new LoginData();
-            _memory = _loginData.ReadData();
             this.LoadData();
         }
 

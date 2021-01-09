@@ -11,7 +11,6 @@ namespace Repository.Repositories
     public class KeyRepository : IBaseRepository<Key>, IKeyRepository
     {
         private readonly KeyData _db = new KeyData();
-        private List<Key> _keys;
         public KeyRepository() { }
         public void Add(Key entity)
         {

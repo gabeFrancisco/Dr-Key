@@ -1,5 +1,4 @@
 ﻿using Domain.Entities.Security;
-using Repository.DataAcess.SerialObjects;
 using System;
 using System.Windows.Forms;
 using UI.Forms.Login;

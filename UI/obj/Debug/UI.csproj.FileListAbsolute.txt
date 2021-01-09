@@ -125,7 +125,6 @@ C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\De
 C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\DrKey.pdb
 C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\Domain.dll
 C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\Repository.dll
-C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\Services.dll
 C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\MySql.Data.dll
 C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\MySqlBackup.dll
 C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\Google.Protobuf.dll
@@ -144,7 +143,6 @@ C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\De
 C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\Domain.dll.config
 C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\Repository.pdb
 C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\Repository.dll.config
-C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\Services.pdb
 C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\MySql.Data.xml
 C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\Google.Protobuf.pdb
 C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\Google.Protobuf.xml
@@ -178,3 +176,5 @@ C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\obj\De
 C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\obj\Debug\UI.csproj.CopyComplete
 C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\obj\Debug\DrKey.exe
 C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\obj\Debug\DrKey.pdb
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\Business.dll
+C:\Users\Gabriel Francisco\Desktop\GENESIS\Dr. Key\WINDOWS APP\Dr. Key\UI\bin\Debug\Business.pdb

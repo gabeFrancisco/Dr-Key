@@ -1,14 +1,7 @@
-﻿using Domain.Entities;
-using Repository.Contracts;
-using Repository.Repositories;
+﻿using Business.Services;
+using Domain.Entities;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using UI.Services;
 
@@ -17,7 +10,7 @@ namespace UI.Forms.Clients
     public partial class ShowClientForm : Form
     {
         static ClientForm _clientForm;
-        static IClientRepository _clientRepository = new ClientRepository();
+        static ClientService _clientService;
         static Client _dto;
         static int _id;
 
@@ -25,6 +18,8 @@ namespace UI.Forms.Clients
         public ShowClientForm(ClientForm clientForm, Client client, bool isEdited)
         {
             InitializeComponent();
+            _clientService = new ClientService();
+
             ThemeSetup.SetShowClientForm(this);
 
             _clientForm = clientForm;
@@ -134,7 +129,7 @@ namespace UI.Forms.Clients
                         if (cpf_cnpj.Length == 11 || cpf_cnpj.Length == 14)
                         {
                             _dto = new Client(_id, name, cpf_cnpj, phone, email, adress, number, complement, neighborhood, city, state, DateTime.Now);
-                            _clientRepository.Update(_dto);
+                            _clientService.UpdateClient(_dto);
 
                             MessageBox.Show("Cliente editado com sucesso!");
                             _clientForm.LoadGrid();

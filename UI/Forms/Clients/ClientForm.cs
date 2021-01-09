@@ -1,6 +1,5 @@
-﻿using Domain.Entities;
-using Repository.Contracts;
-using Repository.Repositories;
+﻿using Business.Services;
+using Domain.Entities;
 using System;
 using System.Windows.Forms;
 using UI.Services;
@@ -9,8 +8,8 @@ namespace UI.Forms.Clients
 {
     public partial class ClientForm : Form
     {
-        //Repository object
-        static IClientRepository _clientRepository = new ClientRepository();
+        //Service object
+        static ClientService _clientService;
 
         //Client object for global usage
         static Client _client;
@@ -24,6 +23,8 @@ namespace UI.Forms.Clients
         public ClientForm()
         {
             InitializeComponent();
+
+            _clientService = new ClientService();
 
             LoadGrid();
 
@@ -60,7 +61,7 @@ namespace UI.Forms.Clients
         }
         public void LoadGrid()
         {
-            dgvClient.DataSource = _clientRepository.ReturnTable();
+            dgvClient.DataSource = _clientService.ReturnTable();
         }
 
         private void btnNewClient_Click(object sender, EventArgs e)
@@ -78,7 +79,7 @@ namespace UI.Forms.Clients
                                MessageBoxButtons.YesNo,
                                MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    _clientRepository.Remove(_id);
+                    _clientService.DeleteClient(_id);
                     MessageBox.Show("Cliente removido com sucesso!");
                     this.LoadGrid();
                 }
@@ -90,14 +91,19 @@ namespace UI.Forms.Clients
 
         }
 
+        public int GetIdByCell(DataGridViewCellEventArgs e)
+        {
+            _index = e.RowIndex;
+            DataGridViewRow selectedIndex = dgvClient.Rows[_index];
+            return int.Parse(selectedIndex.Cells[0].Value.ToString());
+        }
+
         private void dgvClient_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try
             {
-                _index = e.RowIndex;
-                DataGridViewRow selectedIndex = dgvClient.Rows[_index];
-                _id = int.Parse(selectedIndex.Cells[0].Value.ToString());
-                _client = _clientRepository.GetById(_id);
+                _id = this.GetIdByCell(e);
+                _client = _clientService.ReadClient(_id);
             }
             catch (ArgumentOutOfRangeException) { }
             catch (Exception ex) { MessageBox.Show("Erro: " + ex.Message); }
@@ -107,11 +113,9 @@ namespace UI.Forms.Clients
         {
             try
             {
-                _index = e.RowIndex;
-                DataGridViewRow selectedIndex = dgvClient.Rows[_index];
-                _id = int.Parse(selectedIndex.Cells[0].Value.ToString());
+                _id = this.GetIdByCell(e);
 
-                _client = _clientRepository.GetById(_id);
+                _client = _clientService.ReadClient(_id);
                 ShowClientForm showClientForm = new ShowClientForm(this, _client, false);
                 showClientForm.ShowDialog();
             }
@@ -140,7 +144,7 @@ namespace UI.Forms.Clients
                 if (!String.IsNullOrEmpty(txtSearchClient.Text))
                 {
                     string search = txtSearchClient.Text;
-                    dgvClient.DataSource = _clientRepository.SearchTable(search);
+                    dgvClient.DataSource = _clientService.SearchTable(search);
                 }
                 else
                 {

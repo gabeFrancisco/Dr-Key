@@ -30,7 +30,6 @@ namespace Business.Login
                 _memory.IsLoginSaved = false;
                 _data.SetData(_memory);
             }
-            
         }
 
         public static void LoadData()

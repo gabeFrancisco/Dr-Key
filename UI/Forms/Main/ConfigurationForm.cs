@@ -1,8 +1,7 @@
-﻿using Domain.Dictionaries;
+﻿using Business.Services;
+using Domain.Dictionaries;
 using Domain.Entities;
 using Domain.Enums;
-using Repository.DataAcess;
-using Repository.DataAcess.SerialObjects;
 using System;
 using System.Linq;
 using System.Windows.Forms;
@@ -13,7 +12,7 @@ namespace UI
     public partial class ConfigurationForm : Form
     {
         static Configuration config = new Configuration();
-        static ConfigData data = new ConfigData();
+        static ConfigurationService _configurationService;
         static ManagerForm _manager;
         static ThemeColors colors = new ThemeColors();
         static MainTheme mainTheme = new MainTheme();
@@ -21,6 +20,8 @@ namespace UI
         public ConfigurationForm(ManagerForm manager)
         {
             InitializeComponent();
+
+            _configurationService = new ConfigurationService();
 
             ThemeSetup.SetConfigurationForm(this);
 
@@ -34,7 +35,7 @@ namespace UI
             cbTheme.DisplayMember = "Key";
             cbColor.ValueMember = "Value";
 
-            config = data.ReadData();
+            config = _configurationService.Read();
             cbFont.Text = config.FontSize.ToString();
 
             rdId.Checked = config.ShowId;
@@ -70,7 +71,7 @@ namespace UI
                     config.ShowButtons = rdButtons.Checked;
                     config.ShowService = rdService.Checked;
 
-                    data.SetData(config);
+                    _configurationService.Set(config);
 
                     ThemeSetup.SetManagerForm(_manager);
                     this.Close();
@@ -92,30 +93,33 @@ namespace UI
             cbTheme.Text = mainTheme.Theme.FirstOrDefault(x => x.Value == config.Theme).Key;
             cbColor.Text = colors.Color.FirstOrDefault(x => x.Value == config.Color).Key;
         }
-        private void button1_Click(object sender, EventArgs e)
-        {
+
+//====================================DEPRECATED======================================//
+       
+        //private void button1_Click(object sender, EventArgs e)
+        //{
            
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = "SQL Files|*sql";
+        //    SaveFileDialog saveFileDialog = new SaveFileDialog();
+        //    saveFileDialog.Filter = "SQL Files|*sql";
 
-            if (saveFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                try
-                {
-                    string path = saveFileDialog.FileName.ToString() + ".sql";
-                    BackupData backupData = new BackupData();
-                    backupData.SaveDatabaseWithPath(path);
+        //    if (saveFileDialog.ShowDialog() == DialogResult.OK)
+        //    {
+        //        try
+        //        {
+        //            string path = saveFileDialog.FileName.ToString() + ".sql";
+        //            BackupData backupData = new BackupData();
+        //            backupData.SaveDatabaseWithPath(path);
 
-                    MessageBox.Show("Banco de dados exportado com sucesso em " +
-                        "\n" + path, "Êxito", 
-                        MessageBoxButtons.OK, 
-                        MessageBoxIcon.Information);
-                }
-                catch(Exception ex)
-                {
-                    MessageBox.Show("Ocorreu um erro: " + ex.Message);
-                }
-            }
-        }
+        //            MessageBox.Show("Banco de dados exportado com sucesso em " +
+        //                "\n" + path, "Êxito", 
+        //                MessageBoxButtons.OK, 
+        //                MessageBoxIcon.Information);
+        //        }
+        //        catch(Exception ex)
+        //        {
+        //            MessageBox.Show("Ocorreu um erro: " + ex.Message);
+        //        }
+        //    }
+        //}
     }
 }

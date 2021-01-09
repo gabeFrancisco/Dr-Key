@@ -1,6 +1,5 @@
-﻿using Domain.Entities;
-using Repository.Contracts;
-using Repository.Repositories;
+﻿using Business.Services;
+using Domain.Entities;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -10,7 +9,7 @@ namespace UI.Forms.Services
     public partial class ShowService : Form
     {
         //Repository object to set alterations
-        private readonly IServiceRepository _repository = new ServiceRepository();
+        private readonly ServicesService _servicesServices;
 
         //Boolean var that stores the editing state
         private bool _isEdit = false;
@@ -24,6 +23,7 @@ namespace UI.Forms.Services
         public ShowService(ServiceForm serviceForm, bool isEdit, Service service) 
         {
             InitializeComponent();
+            _servicesServices = new ServicesService();
             _service = service;
             _serviceForm = serviceForm;
 
@@ -81,7 +81,7 @@ namespace UI.Forms.Services
                             Price = price
                         };
 
-                        _repository.Update(service);
+                        _servicesServices.UpdateService(service);
 
                         _serviceForm.LoadGrid();
                         _serviceForm.LoadCard();

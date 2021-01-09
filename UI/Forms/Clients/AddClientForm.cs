@@ -1,19 +1,20 @@
-﻿using Domain.Entities;
-using Repository.Contracts;
-using Repository.Repositories;
+﻿using Business.Services;
+using Domain.Entities;
 using System;
 using System.Windows.Forms;
+
 
 namespace UI.Forms.Clients
 {
     public partial class AddClientForm : Form
     {
         private Client _dto;
-        private IClientRepository _clientRepository = new ClientRepository();
+        private ClientService _clientService;
         private ClientForm _clientForm;
         public AddClientForm(ClientForm clientForm)
         {
             InitializeComponent();
+            _clientService = new ClientService();
             _clientForm = clientForm;
         }
 
@@ -39,7 +40,7 @@ namespace UI.Forms.Clients
                     if (cpf_cnpj.Length == 11 || cpf_cnpj.Length == 14)
                     {
                         _dto = new Client(name, cpf_cnpj, phone, email, adress, number, complement, neighborhood, city, state, DateTime.Now);
-                        _clientRepository.Add(_dto);
+                        _clientService.CreateClient(_dto);
 
                         MessageBox.Show("Cliente cadastrado com sucesso!");
                         _clientForm.LoadGrid();

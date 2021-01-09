@@ -1,6 +1,5 @@
-﻿using Domain.Entities;
-using Repository.Contracts;
-using Repository.Repositories;
+﻿using Business.Services;
+using Domain.Entities;
 using System;
 using System.Windows.Forms;
 
@@ -9,7 +8,7 @@ namespace UI.Forms.Services
     public partial class AddServiceForm : Form
     {
         //Service repository database variable
-        private readonly IServiceRepository _repository = new ServiceRepository();
+        private readonly ServicesService _servicesService;
         
         //Variable thats stores the ServiceForm state. It's used to update
         //its datagridview when a new service is created!
@@ -18,6 +17,7 @@ namespace UI.Forms.Services
         public AddServiceForm(ServiceForm serviceForm)
         {
             InitializeComponent();
+            _servicesService = new ServicesService();
             _serviceForm = serviceForm;
         }
 
@@ -40,7 +40,7 @@ namespace UI.Forms.Services
                         Price = price
                     };
 
-                    _repository.Add(service);
+                    _servicesService.CreateService(service);
 
                     _serviceForm.LoadGrid();
                     _serviceForm.SetTableConfig();

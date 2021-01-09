@@ -1,6 +1,5 @@
-﻿using Domain.Entities;
-using Repository.Contracts;
-using Repository.Repositories;
+﻿using Business.Services;
+using Domain.Entities;
 using System;
 using System.Windows.Forms;
 using UI.Services;
@@ -10,11 +9,12 @@ namespace UI
     public partial class AddKeyForm : Form
     {
         static ManagerForm _managerForm;
-        static IKeyRepository _keyRepository = new KeyRepository();
+        static KeyService _keyService;
         static Key dto;
         public AddKeyForm(ManagerForm managerForm)
         {
             InitializeComponent();
+            _keyService = new KeyService();
             _managerForm = managerForm;
 
             ThemeSetup.SetAddKeyForm(this);
@@ -60,9 +60,9 @@ namespace UI
                     };
 
 
-                    if (_keyRepository.IsDuplicated(dto) == false)
+                    if (_keyService.IsDuplicated(dto) == false)
                     {
-                        _keyRepository.Add(dto);
+                        _keyService.CreateKey(dto);
 
                         MessageBox.Show("Chave registrada com sucesso!");
                         _managerForm.UpdateKeyNumber();
@@ -77,7 +77,7 @@ namespace UI
                                        MessageBoxButtons.YesNo,
                                        MessageBoxIcon.Question) == DialogResult.Yes)
                         {
-                            _keyRepository.Add(dto);
+                            _keyService.CreateKey(dto);
 
                             MessageBox.Show("Chave registrada com sucesso!");
                             _managerForm.UpdateKeyNumber();

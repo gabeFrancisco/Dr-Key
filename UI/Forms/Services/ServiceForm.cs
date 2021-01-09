@@ -1,4 +1,5 @@
-﻿using Domain.Entities;
+﻿using Business.Services;
+using Domain.Entities;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -17,22 +18,34 @@ namespace UI.Forms.Services
         //Service object that is selected by the datagrid
         private Service _service = null;
 
+        //Services
+        private ServicesService _servicesServices;
+
         public ServiceForm()
         {
             InitializeComponent();
             ThemeSetup.SetServiceForm(this);
 
+            _servicesServices = new ServicesService();
+
             this.LoadGrid();
             this.SetTableConfig();
 
-            if (_repository.ReturnTable().Rows.Count > 0)
+            if (_servicesServices.ReturnTable().Rows.Count > 0)
             {
                 _id = Convert.ToInt32(dgvServices.Rows[0].Cells[0].Value.ToString());
-                _service = _repository.GetById(_id);
+                _service = _servicesServices.ReadService(_id);
                 dgvServices.Rows[_index].Selected = true;
 
                 this.LoadCard();
             }
+        }
+
+        public int GetIdByCell(DataGridViewCellEventArgs e)
+        {
+            _index = e.RowIndex;
+            DataGridViewRow selectedRow = dgvServices.Rows[_index];
+            return int.Parse(selectedRow.Cells[0].Value.ToString());
         }
 
         internal void SetTableConfig()
@@ -60,11 +73,8 @@ namespace UI.Forms.Services
         {
             try
             {
-                _index = e.RowIndex;
-                DataGridViewRow selectedRow = dgvServices.Rows[_index];
-
-                _id = Convert.ToInt32(selectedRow.Cells[0].Value.ToString());
-                _service = _repository.GetById(_id);
+                this.GetIdByCell(e);
+                _service = _servicesServices.ReadService(_id);
                 LoadCard();
             }
             catch(ArgumentOutOfRangeException) { }
@@ -72,9 +82,9 @@ namespace UI.Forms.Services
 
         internal void LoadCard()
         {
-            if(_repository.ReturnTable().Rows.Count >= 0)
+            if(_servicesServices.ReturnTable().Rows.Count >= 0)
             {
-                Service service = _repository.GetById(_id);
+                Service service = _servicesServices.ReadService(_id);
 
                 txtTitle.Text = service.Title;
                 txtDescription.Text = service.Description;
@@ -90,7 +100,7 @@ namespace UI.Forms.Services
 
         internal void LoadGrid()
         {
-            dgvServices.DataSource = _repository.ReturnTable();
+            dgvServices.DataSource = _servicesServices.ReturnTable();
             dgvServices.Update();
         }
 
@@ -131,7 +141,7 @@ namespace UI.Forms.Services
                     MessageBoxButtons.YesNo,
                     MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    _repository.Remove(_id);
+                    _servicesServices.DeleteService(_id);
                     MessageBox.Show("Serviço removido com sucesso!", "Concluído!",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Information);
@@ -152,7 +162,7 @@ namespace UI.Forms.Services
                 if (!String.IsNullOrEmpty(txtSearch.Text))
                 {
                     string search = txtSearch.Text;
-                    dgvServices.DataSource = _repository.SearchTable(search);
+                    dgvServices.DataSource = _servicesServices.SearchTable(search);
                 }
                 else
                 {
