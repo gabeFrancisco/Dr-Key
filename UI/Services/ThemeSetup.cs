@@ -223,7 +223,6 @@ namespace UI.Services
                 keyForm.btnImage.ForeColor = Color.Black;
                 keyForm.txtObservation.BackColor = Color.LightGray;
 
-                keyForm.panelSide.BackgroundImage = Properties.Resources.BARDARK;
                 keyForm.panelSide.BorderStyle = BorderStyle.FixedSingle;
 
             }
@@ -240,7 +239,6 @@ namespace UI.Services
                 keyForm.btnImage.ForeColor = Color.Black;
                 keyForm.txtObservation.BackColor = Color.White;
 
-                keyForm.panelSide.BackgroundImage = Properties.Resources.BARLIGHT;
                 keyForm.panelSide.BorderStyle = BorderStyle.None;
             }
         }

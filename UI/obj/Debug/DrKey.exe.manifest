@@ -79,14 +79,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DrKey.exe" size="18642472">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DrKey.exe" size="18644008">
       <assemblyIdentity name="DrKey" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Tde7HjqlGN2w8IcxXuR1VLSZ9+NvoqIB6D7aSJtFM1c=</dsig:DigestValue>
+        <dsig:DigestValue>ux7KVGv7OhYuOndtHkr5g8HVfydHRwNyuZUHii46bQg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
