@@ -56,6 +56,7 @@
     <Compile Include="Entities\User.cs" />
     <Compile Include="Enums\Theme.cs" />
     <Compile Include="Entities\Key.cs" />
+    <Compile Include="Exceptions\ConnectionException.cs" />
     <Compile Include="Exceptions\InvalidUserException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

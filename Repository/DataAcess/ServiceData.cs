@@ -18,7 +18,7 @@ namespace Repository.DataAcess
         {
             try
             {
-                this.conn.Open();
+                this.Connection.Open();
 
                 string strCommand = "SELECT * FROM services" + globalUserId;
                 DataTable dt = new DataTable();
@@ -29,7 +29,7 @@ namespace Repository.DataAcess
             }
             finally
             {
-                this.conn.Close();
+                this.Connection.Close();
             }
         }
 
@@ -37,7 +37,7 @@ namespace Repository.DataAcess
         {
             try
             {
-                this.conn.Open();
+                this.Connection.Open();
                 Command = SetCommand($"insert into services values (null, " +
                     $"@title, @description, @price, @user_id)");
 
@@ -50,7 +50,7 @@ namespace Repository.DataAcess
             }
             finally
             {
-                this.conn.Close();
+                this.Connection.Close();
             }
         }
 
@@ -58,7 +58,7 @@ namespace Repository.DataAcess
         {
             try
             {
-                this.conn.Open();
+                this.Connection.Open();
                 string strCommand = $"SELECT * FROM services WHERE SERVICEID = {id}";
                 Command = SetCommand(strCommand);
                 DataReader = Command.ExecuteReader();
@@ -82,7 +82,7 @@ namespace Repository.DataAcess
             }
             finally
             {
-                this.conn.Close();
+                this.Connection.Close();
             }
         }
 
@@ -90,7 +90,7 @@ namespace Repository.DataAcess
         {
             try
             {
-                this.conn.Open();
+                this.Connection.Open();
                 Command = SetCommand("update services set " +
                     "title = @title, " +
                     "description = @description, " +
@@ -105,7 +105,7 @@ namespace Repository.DataAcess
             }
             finally
             {
-                this.conn.Close();
+                this.Connection.Close();
             }
 
         }
@@ -114,7 +114,7 @@ namespace Repository.DataAcess
         {
             try
             {
-                this.conn.Open();
+                this.Connection.Open();
                 Command = SetCommand($"delete from services where serviceid = @id");
 
                 Command.Parameters.AddWithValue("@id", id);
@@ -122,7 +122,7 @@ namespace Repository.DataAcess
             }
             finally
             {
-                this.conn.Close();
+                this.Connection.Close();
             }
         }
 
@@ -130,7 +130,7 @@ namespace Repository.DataAcess
         {
             try
             {
-                this.conn.Open();
+                this.Connection.Open();
                 DataTable dt = new DataTable();
                 DataAdapter = SetAdapter($"select * from services where title like '{search}%' and user_id = " + _user);
                 MySqlCommandBuilder cb = new MySqlCommandBuilder(DataAdapter);
@@ -140,7 +140,7 @@ namespace Repository.DataAcess
             }
             finally
             {
-                this.conn.Close();
+                this.Connection.Close();
             }
         }
     }

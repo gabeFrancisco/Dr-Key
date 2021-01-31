@@ -19,7 +19,7 @@ namespace Repository.DataAcess
         {
             try
             {
-                this.conn.Open();
+                this.Connection.Open();
 
                 string cmd = "SELECT * FROM client" + globalUserId;
                 DataTable dt = new DataTable();
@@ -30,7 +30,7 @@ namespace Repository.DataAcess
             }
             finally
             {
-                this.conn.Close();
+                this.Connection.Close();
             }
         }
 
@@ -38,7 +38,7 @@ namespace Repository.DataAcess
         {
             try
             {
-                this.conn.Open();
+                this.Connection.Open();
                 Command = SetCommand("insert into client values (null, " +
                     "@name, @phone, @email, @adress, @number, @complement, @neighborhood, @city, @state, @signdate, @cpf_cnpj, @user_id)");
 
@@ -59,7 +59,7 @@ namespace Repository.DataAcess
             }
             finally
             {
-                this.conn.Close();
+                this.Connection.Close();
             }
         }
 
@@ -67,7 +67,7 @@ namespace Repository.DataAcess
         {
             try
             {
-                conn.Open();
+                Connection.Open();
                 Command = SetCommand($"select * from client where clientid = {id}");
                 MySqlDataReader dr = Command.ExecuteReader();
 
@@ -93,7 +93,7 @@ namespace Repository.DataAcess
             }
             finally
             {
-                conn.Close();
+                Connection.Close();
             }
         }
 
@@ -101,7 +101,7 @@ namespace Repository.DataAcess
         {
             try 
             {
-                this.conn.Open();
+                this.Connection.Open();
                 Command = SetCommand(
                    "update client set " +
                    "name = @name," +
@@ -134,7 +134,7 @@ namespace Repository.DataAcess
             }
             finally
             {
-                conn.Close();
+                Connection.Close();
             }
         }
 
@@ -142,7 +142,7 @@ namespace Repository.DataAcess
         {
             try
             {
-                conn.Open();
+                Connection.Open();
                 Command = SetCommand("delete from client where clientid = @id");
 
                 Command.Parameters.AddWithValue("@id", id);
@@ -150,7 +150,7 @@ namespace Repository.DataAcess
             }
             finally
             {
-                conn.Close();
+                Connection.Close();
             }
         }
 
@@ -158,7 +158,7 @@ namespace Repository.DataAcess
         {
             try
             {
-                this.conn.Open();
+                this.Connection.Open();
                 DataTable dt = new DataTable();
                 DataAdapter = SetAdapter($"select * from client where name like '{search}%' and user_id = " + _user);
                 DataAdapter.Fill(dt);
@@ -167,7 +167,7 @@ namespace Repository.DataAcess
             }
             finally
             {
-                this.conn.Close();
+                this.Connection.Close();
             }
         }
     }

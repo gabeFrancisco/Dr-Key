@@ -19,3 +19,10 @@ C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Domain\obj\Debug\Domai
 C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
 C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Domain\obj\Debug\Domain.dll
 C:\Users\Gabriel Francisco\Desktop\GENESIS\KeyFinder Lite\Domain\obj\Debug\Domain.pdb
+C:\Users\Gabriel Francisco\Desktop\Projetos\Dr. Chave\Dr-Key\Domain\bin\Debug\Domain.dll.config
+C:\Users\Gabriel Francisco\Desktop\Projetos\Dr. Chave\Dr-Key\Domain\bin\Debug\Domain.dll
+C:\Users\Gabriel Francisco\Desktop\Projetos\Dr. Chave\Dr-Key\Domain\bin\Debug\Domain.pdb
+C:\Users\Gabriel Francisco\Desktop\Projetos\Dr. Chave\Dr-Key\Domain\obj\Debug\Domain.csprojAssemblyReference.cache
+C:\Users\Gabriel Francisco\Desktop\Projetos\Dr. Chave\Dr-Key\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel Francisco\Desktop\Projetos\Dr. Chave\Dr-Key\Domain\obj\Debug\Domain.dll
+C:\Users\Gabriel Francisco\Desktop\Projetos\Dr. Chave\Dr-Key\Domain\obj\Debug\Domain.pdb

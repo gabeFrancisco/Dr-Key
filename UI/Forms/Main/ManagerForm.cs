@@ -9,6 +9,7 @@ using UI.Forms.Services;
 using UI.Forms.User;
 using UI.Services;
 using Business.Services;
+using Domain.Exceptions;
 
 namespace UI
 {
@@ -19,8 +20,8 @@ namespace UI
         //The id of the selected key in the datagridview
         static int _keyid;
         
-        //The index of th datagrid
-        static int _index;
+        //The index of the datagrid
+        static readonly int _index;
 
         //Static variables that handle the filter
         static string _searchManufactor;
@@ -42,12 +43,26 @@ namespace UI
         */
         private void ManagerForm_Load(object sender, EventArgs e)
         {
-            LoginService.LoadData();
-            tsUser.Text = LoginService._memory.User.UserName.ToString();
-            _keyService = new KeyService();
-            
+            try
+            {
+                LoginService.LoadData();
+                tsUser.Text = LoginService._memory.User.UserName.ToString();
+                _keyService = new KeyService();
+            }
+            catch (ConnectionException)
+            {
+                if(MessageBox.Show("Houve um problema com a comunicação ao servidor." +
+                    "\nVerifique sua conexão com a internet e tente novamente!",
+                    "Erro de Conexão",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error) == DialogResult.OK)
+                {
+                    Application.Exit();
+                }
+            }
+
             #region-COLUMNS STYLE
-            
+
             //dgvKey.RowTemplate.Height = 25;
             this.LoadGrid();
 

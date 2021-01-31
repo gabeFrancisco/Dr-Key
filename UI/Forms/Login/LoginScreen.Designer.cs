@@ -36,7 +36,7 @@
             this.txtUser = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.chbKeepConn = new System.Windows.Forms.CheckBox();
+            this.chbKeepConnection = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -115,17 +115,17 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // chbKeepConn
+            // chbKeepConnection
             // 
-            this.chbKeepConn.AutoSize = true;
-            this.chbKeepConn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chbKeepConn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.chbKeepConn.Location = new System.Drawing.Point(101, 229);
-            this.chbKeepConn.Name = "chbKeepConn";
-            this.chbKeepConn.Size = new System.Drawing.Size(141, 21);
-            this.chbKeepConn.TabIndex = 6;
-            this.chbKeepConn.Text = "Manter conectado";
-            this.chbKeepConn.UseVisualStyleBackColor = true;
+            this.chbKeepConnection.AutoSize = true;
+            this.chbKeepConnection.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chbKeepConnection.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.chbKeepConnection.Location = new System.Drawing.Point(101, 229);
+            this.chbKeepConnection.Name = "chbKeepConnection";
+            this.chbKeepConnection.Size = new System.Drawing.Size(141, 21);
+            this.chbKeepConnection.TabIndex = 6;
+            this.chbKeepConnection.Text = "Manter conectado";
+            this.chbKeepConnection.UseVisualStyleBackColor = true;
             // 
             // LoginScreen
             // 
@@ -133,7 +133,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(367, 305);
-            this.Controls.Add(this.chbKeepConn);
+            this.Controls.Add(this.chbKeepConnection);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUser);
@@ -165,6 +165,6 @@
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckBox chbKeepConn;
+        private System.Windows.Forms.CheckBox chbKeepConnection;
     }
 }

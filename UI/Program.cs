@@ -1,5 +1,8 @@
 ﻿using Domain.Entities.Security;
+using Domain.Exceptions;
+using MySql.Data.MySqlClient;
 using System;
+using System.Net.Sockets;
 using System.Windows.Forms;
 using UI.Forms.Login;
 
@@ -28,7 +31,7 @@ namespace UI
                     "Erro de Inicialização",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error
-              );
+                );
             }
           
         }

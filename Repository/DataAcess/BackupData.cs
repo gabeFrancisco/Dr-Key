@@ -19,13 +19,13 @@ namespace Repository.DataAcess
         {
             try
             {
-                conn.Open();
+                Connection.Open();
                 MySqlCommand cmd = new MySqlCommand();
-                cmd.Connection = conn;
+                cmd.Connection = Connection;
                
                 MySqlBackup backup = new MySqlBackup(cmd);
                 backup.ExportToFile(this.dbPath);
-                conn.Close();
+                Connection.Close();
 
                 return true;
             }
@@ -40,7 +40,7 @@ namespace Repository.DataAcess
             }
             finally
             {
-                conn.Close();
+                Connection.Close();
             }
         }
 
@@ -48,13 +48,13 @@ namespace Repository.DataAcess
         {
             try
             {
-                conn.Open();
+                Connection.Open();
                 MySqlCommand cmd = new MySqlCommand();
-                cmd.Connection = conn;
+                cmd.Connection = Connection;
 
                 MySqlBackup backup = new MySqlBackup(cmd);
                 backup.ExportToFile(path);
-                conn.Close();
+                Connection.Close();
 
                 return true;
             }
@@ -69,7 +69,7 @@ namespace Repository.DataAcess
             }
             finally
             {
-                conn.Close();
+                Connection.Close();
             }
         }
 

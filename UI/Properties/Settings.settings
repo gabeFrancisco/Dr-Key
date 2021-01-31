@@ -2,12 +2,12 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="UI.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="KeyFinderDataBaseConnectionString" Type="(Connection string)" Scope="Application">
+    <Setting Name="KeyFinderDataBaseConnectionectionString" Type="(Connectionection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=(localdb)\mssqllocaldb;Initial Catalog=KeyFinderDataBase;Integrated Security=True&lt;/ConnectionString&gt;
+&lt;SerializableConnectionectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionectionString&gt;Data Source=(localdb)\mssqllocaldb;Initial Catalog=KeyFinderDataBase;Integrated Security=True&lt;/ConnectionectionString&gt;
   &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
-&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+&lt;/SerializableConnectionectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Data Source=(localdb)\mssqllocaldb;Initial Catalog=KeyFinderDataBase;Integrated Security=True</Value>
     </Setting>
   </Settings>

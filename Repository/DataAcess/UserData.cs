@@ -40,7 +40,7 @@ namespace Repository.DataAcess
         {
             try
             {
-                this.conn.Open();
+                this.Connection.Open();
                 Command = SetCommand($"select * from user where username = '{username}'");
                 DataReader = Command.ExecuteReader();
 
@@ -72,7 +72,7 @@ namespace Repository.DataAcess
             }
             finally
             {
-                this.conn.Close();
+                this.Connection.Close();
             }
         }
     }

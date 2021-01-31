@@ -1,5 +1,7 @@
 ﻿using Domain.Entities;
 using Domain.Entities.Security;
+using Domain.Exceptions;
+using MySql.Data.MySqlClient;
 using Repository.DataAcess.SerialObjects;
 using System;
 using System.Collections.Generic;
@@ -30,7 +32,7 @@ namespace Repository.DataAcess
         {
             try
             {
-                conn.Open();
+                Connection.Open();
                 string strCommand = $"SELECT KEYID, MANUFACTOR, MODEL, KEYTYPE, KEYYEAR, PRICE, BUTTONS, QUANTITY, IMAGEPATH, OBSERVATION, SERVICETYPE FROM keylist" + globalUserId;
                 Command = SetCommand(strCommand);
                 DataReader = Command.ExecuteReader();
@@ -70,9 +72,13 @@ namespace Repository.DataAcess
                 }
                 return list;
             }
+            catch (MySqlException)
+            {
+                throw new ConnectionException();
+            }
             finally
             {
-                conn.Close();
+                Connection.Close();
             }
           
         }
@@ -81,7 +87,7 @@ namespace Repository.DataAcess
         {
             try
             {
-                conn.Open();
+                Connection.Open();
 
                 string strCommand = "SELECT * FROM keylist" + globalUserId;
                 DataTable dt = new DataTable();
@@ -92,7 +98,7 @@ namespace Repository.DataAcess
             }
             finally
             {
-                conn.Close();
+                Connection.Close();
             }
         }
 
@@ -112,7 +118,7 @@ namespace Repository.DataAcess
             {
                 nfi.NumberDecimalSeparator = ".";
 
-                conn.Open();
+                Connection.Open();
                 Command = SetCommand("INSERT INTO keylist VALUES (null, " +
                     "@manufactor, @model, @keytype, @keyyear, @price, @buttons, @quantity, @servicetype, @image, @observation, @userId)");
 
@@ -129,11 +135,11 @@ namespace Repository.DataAcess
                 Command.Parameters.AddWithValue("@userId", _user);
 
                 Command.ExecuteNonQuery();
-                conn.Close();
+                Connection.Close();
             }
             finally
             {
-                conn.Close();
+                Connection.Close();
             }
         }
 
@@ -141,7 +147,7 @@ namespace Repository.DataAcess
         {
             try
             {
-                conn.Open();
+                Connection.Open();
                 Command = SetCommand($"SELECT * FROM keylist WHERE KEYID = {id} && USER_ID = {_user}");
                 DataReader = Command.ExecuteReader();
 
@@ -179,7 +185,7 @@ namespace Repository.DataAcess
 
             finally
             {
-                conn.Close();
+                Connection.Close();
             }
         }
 
@@ -187,7 +193,7 @@ namespace Repository.DataAcess
         {
                 nfi.NumberDecimalSeparator = ".";
 
-                conn.Open();
+                Connection.Open();
                 Command = SetCommand("update keylist set manufactor = @manufactor," +
                     "model = @model," +
                     "keytype = @keytype," +
@@ -216,15 +222,15 @@ namespace Repository.DataAcess
 
         public void DeleteKey(int id)
         {
-            conn.Open();
+            Connection.Open();
             Command = SetCommand($"DELETE FROM keylist WHERE KEYID = {id}");
             Command.ExecuteNonQuery();
-            conn.Close();
+            Connection.Close();
         }
 
         public int KeyNumbers()
         {
-            conn.Open();
+            Connection.Open();
             Command = SetCommand("SELECT COUNT(*) AS 'TOTAL KEYS' FROM keylist" + globalUserId);
             DataReader = Command.ExecuteReader();
 
@@ -232,57 +238,57 @@ namespace Repository.DataAcess
             {
                 count = Convert.ToInt32(DataReader["TOTAL KEYS"]);
             }
-            conn.Close();
+            Connection.Close();
 
             return count;
         }
 
         public DataTable SearchTable(string search)
         {
-            conn.Open();
+            Connection.Open();
             DataTable dt = new DataTable();
             DataAdapter = SetAdapter($"SELECT * FROM keylist WHERE MODEL LIKE '{search}%' AND USER_ID = {_user}");
             DataAdapter.Fill(dt);
-            conn.Close();
+            Connection.Close();
 
             return dt;
         }
 
         public DataTable Search(string manufactor, string type, string service)
         {
-            conn.Open();
+            Connection.Open();
             DataTable dt = new DataTable();
             DataAdapter = SetAdapter($"SELECT * FROM keylist WHERE MANUFACTOR LIKE '{manufactor}%'" +
                 $"AND KEYTYPE LIKE '{type}%'" +
                 $"AND SERVICETYPE LIKE '{service}%' AND USER_ID = {_user}");
             DataAdapter.Fill(dt);
-            conn.Close();
+            Connection.Close();
 
             return dt;
         }
 
         public void AddQuantity(Key key)
         {
-            conn.Open();
+            Connection.Open();
             Command = SetCommand($"UPDATE keylist SET QUANTITY = {key.Quantity} WHERE KEYID = {key.Id}");
             Command.ExecuteNonQuery();
-            conn.Close();
+            Connection.Close();
         }
 
         public void SubtractQuantity(Key key)
         {
-            conn.Open();
+            Connection.Open();
             Command = SetCommand($"UPDATE keylist SET QUANTITY = {key.Quantity} WHERE KEYID = {key.Id}");
             Command.ExecuteNonQuery();
-            conn.Close();
+            Connection.Close();
         }
 
         public void UpdateImage(int id)
         {
-            conn.Open();
+            Connection.Open();
             Command = SetCommand($"UPDATE keylist SET IMAGEPATH = NULL WHERE KEYID = {id}");
             Command.ExecuteNonQuery();
-            conn.Close();
+            Connection.Close();
         }
     }
 }

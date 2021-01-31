@@ -32,7 +32,7 @@ namespace UI.Forms.Login
 
                         LoginService.VerifyLogin(user, password);
                          
-                        if(chbKeepConn.CheckState == CheckState.Checked)
+                        if(chbKeepConnection.CheckState == CheckState.Checked)
                         {
                             LoginService.SaveUserState(true);
                         }

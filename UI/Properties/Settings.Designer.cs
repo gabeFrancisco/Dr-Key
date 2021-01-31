@@ -28,9 +28,9 @@ namespace UI.Properties {
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\mssqllocaldb;Initial Catalog=KeyFinderDataBase;Integrated S" +
             "ecurity=True")]
-        public string KeyFinderDataBaseConnectionString {
+        public string KeyFinderDataBaseConnectionectionString {
             get {
-                return ((string)(this["KeyFinderDataBaseConnectionString"]));
+                return ((string)(this["KeyFinderDataBaseConnectionectionString"]));
             }
         }
     }

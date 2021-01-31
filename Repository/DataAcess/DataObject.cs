@@ -1,15 +1,21 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Domain.Exceptions;
+using MySql.Data.MySqlClient;
 
 namespace Repository.DataAcess
 {
     public abstract class DataObject
     {
-        protected MySqlConnection conn = new MySqlConnection (Connections[0]);
+        /// <summary>
+        /// This property is common to all children of DataObject. 
+        /// You can choose witch connection you want
+        /// </summary>
+        protected MySqlConnection Connection = new MySqlConnection (Connections[0]);
 
-        private static readonly string[] Connections = new string[2]
+        private static readonly string[] Connections = new string[3]
         {
-            "Server=mysql.keyfinder.kinghost.net;User=keyfinder;Password=keyfinder38712;Database=keyfinder;",
-            "Server=localhost;User=root;Password=1234;Database=keyfinder;"
+            "Server=mysql.drkey.kinghost.net;User=drkey;Password=drkey38712;Database=drkey;",
+            "Server=localhost;User=root;Password=1234;Database=keyfinder;",
+            "Server=mysql.test;User=test;Password=test;Database=test;",
         };
 
         protected static MySqlCommand Command = null;
@@ -17,14 +23,34 @@ namespace Repository.DataAcess
         protected static MySqlDataReader DataReader = null;
         protected static MySqlDataAdapter DataAdapter = null;
 
+        /// <summary>
+        /// Returns a new MySqlCommand instance with the connection inheritance and command as a parameter.
+        /// </summary>
         protected MySqlCommand SetCommand(string command)
         {
-            return new MySqlCommand(command, this.conn);
+            try
+            {
+                return new MySqlCommand(command, this.Connection);
+            }
+            catch (MySqlException)
+            {
+                throw new ConnectionException();
+            }
         }
 
+        /// <summary>
+        /// Returns a new MySqlDataAdapter instance with the connection inheritance and command as a parameter.
+        /// </summary>
         protected MySqlDataAdapter SetAdapter(string command)
         {
-            return new MySqlDataAdapter(command, this.conn);
+            try
+            {
+                return new MySqlDataAdapter(command, this.Connection);
+            }
+            catch (MySqlException)
+            {
+                throw new ConnectionException();
+            }
         }
     }
 }
