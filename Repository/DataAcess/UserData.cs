@@ -1,6 +1,7 @@
 ﻿using Domain.Entities;
 using Domain.Entities.Security;
 using Domain.Exceptions;
+using MySql.Data.MySqlClient;
 using Repository.DataAcess.SerialObjects;
 using System;
 
@@ -10,30 +11,37 @@ namespace Repository.DataAcess
     {
         static LoginData loginData = new LoginData();
         public bool VerifyUser(string username, string password)
-        {  
-            User userInstance;
-               
-            userInstance = this.ReadUser(username);
-            if(userInstance == null)
+        {
+            try
             {
-                throw new InvalidUserException();
-            }
-                
-            Hash hash = new Hash();
-            string hashPassword = hash.VerifyPassword(password);
-            if(hashPassword != userInstance.Password)
-            {
-                throw new InvalidUserException();
-            }
+                User userInstance;
 
-            LoginMemory loginMemory = new LoginMemory
-            {
-                User = userInstance
-            };
+                userInstance = this.ReadUser(username);
+                if (userInstance == null)
+                {
+                    throw new InvalidUserException();
+                }
 
-            loginData.SetData(loginMemory);
-                
-            return true;
+                Hash hash = new Hash();
+                string hashPassword = hash.VerifyPassword(password);
+                if (hashPassword != userInstance.Password)
+                {
+                    throw new InvalidUserException();
+                }
+
+                LoginMemory loginMemory = new LoginMemory
+                {
+                    User = userInstance
+                };
+
+                loginData.SetData(loginMemory);
+
+                return true;
+            }
+            catch(Exception)
+            {
+                throw new ConnectionException();
+            }
         }
 
         public User ReadUser(string username)
@@ -69,6 +77,10 @@ namespace Repository.DataAcess
                     return userInstance;
                 }
                 return null;
+            }
+            catch (MySqlException)
+            {
+                throw new ConnectionException();
             }
             finally
             {

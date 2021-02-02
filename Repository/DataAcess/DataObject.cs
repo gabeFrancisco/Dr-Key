@@ -9,7 +9,7 @@ namespace Repository.DataAcess
         /// This property is common to all children of DataObject. 
         /// You can choose witch connection you want
         /// </summary>
-        protected MySqlConnection Connection = new MySqlConnection (Connections[0]);
+        protected MySqlConnection Connection = new MySqlConnection (Connections[2]);
 
         private static readonly string[] Connections = new string[3]
         {
