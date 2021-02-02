@@ -120,7 +120,40 @@ namespace UI
         public void LoadGrid()
         {
             dgvKey.DataSource = _keyService.ReturnTable();
-            //SaveDb();
+        }
+
+        public void LoadCard()
+        {
+            try
+            {
+                Key key = _keyService.ReadKey(_keyid);
+
+                BrandLoader.LoadBrandImage(pctManufactor, key.Manufactor);
+                lbModel.Text = key.Model;
+                lbType.Text = key.Type;
+                lbYear.Text = key.Year;
+                lbButtons.Text = key.Buttons.ToString();
+                lbQte.Text = key.Quantity.ToString();
+                lbServiceType.Text = key.ServiceType;
+                lbValue.Text = "R$" + key.Price.ToString("f2");
+            }
+            catch (Exception) { }
+        }
+
+        public void ClearCard()
+        {
+            try
+            {
+                BrandLoader.LoadBrandImage(pctManufactor, _searchManufactor);
+                lbModel.Text = "...";
+                lbType.Text = "...";
+                lbYear.Text = "...";
+                lbButtons.Text = "...";
+                lbQte.Text = "...";
+                lbServiceType.Text = "...";
+                lbValue.Text = "...";
+            }
+            catch (Exception) { }
         }
 
         public int GetIdByCell(DataGridViewCellEventArgs e)
@@ -246,6 +279,7 @@ namespace UI
             {
                 _searchType = cbSearchType.Text;
                 this.dgvKey.DataSource = _keyService.SearchFilter(_searchManufactor, _searchType, _searchService);
+                this.ClearCard();
             }
             catch (Exception ex)
             {
@@ -260,6 +294,7 @@ namespace UI
             {
                 _searchManufactor = cbSearchManufactor.Text;
                 this.dgvKey.DataSource = _keyService.SearchFilter(_searchManufactor, _searchType, _searchService);
+                this.ClearCard();
             }
             catch (Exception ex)
             {
@@ -274,6 +309,7 @@ namespace UI
             {
                 _searchService = cbServiceType.Text;
                 this.dgvKey.DataSource = _keyService.SearchFilter(_searchManufactor, _searchType, _searchService);
+                this.ClearCard();
             }
             catch (Exception ex)
             {
@@ -386,24 +422,6 @@ namespace UI
         }
 
         //This loads the card at the left of the window
-        public void LoadCard()
-        {
-            try
-            {
-                Key key = _keyService.ReadKey(_keyid);
-
-                BrandLoader.LoadBrandImage(pctManufactor, key.Manufactor);
-                lbModel.Text = key.Model;
-                lbType.Text = key.Type;
-                lbYear.Text = key.Year;
-                lbButtons.Text = key.Buttons.ToString();
-                lbQte.Text = key.Quantity.ToString();
-                lbServiceType.Text = key.ServiceType;
-                lbValue.Text = "R$" + key.Price.ToString("f2");
-            }
-            catch (Exception) { }
-          
-        }
 
         private void editarToolStripMenuItem_Click(object sender, EventArgs e)
         {

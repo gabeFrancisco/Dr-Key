@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
   <asmv1:assemblyIdentity name="DrKey.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
-  <description asmv2:iconFile="ICONDRKEY.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <description asmv2:iconFile="DRICON.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
     <assemblyIdentity name="DrKey" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -79,14 +79,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DrKey.exe" size="18644008">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DrKey.exe" size="18597928">
       <assemblyIdentity name="DrKey" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>JelNU8lYYRVFx/fzMx9zICXvzTEm2CY2LBpRE3Z4UR0=</dsig:DigestValue>
+        <dsig:DigestValue>u7z3sot3THbyY5hiJQDVO/bMEm0ax76cuuCGToH2/sk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -182,7 +182,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>/3ti81t+BYTnLBNjbkXAUNMexeBT0GeJjy67QwoLhg8=</dsig:DigestValue>
+        <dsig:DigestValue>bxNP9DRmxCU1FPiqaqCsOLSsb9KuIehhWH/obFLGtQM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -258,6 +258,15 @@
       </hash>
     </dependentAssembly>
   </dependency>
+  <file name="DRICON.ico" size="51478">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RSGoahKmWNOKveoJunIzdVF/TVcZvEdMgm7rlygHzEQ=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="DrKey.exe.config" size="1552">
     <hash>
       <dsig:Transforms>

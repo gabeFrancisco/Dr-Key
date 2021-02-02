@@ -73,7 +73,7 @@
     <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>ICONDRKEY.ico</ApplicationIcon>
+    <ApplicationIcon>DRICON.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>UI.Program</StartupObject>
@@ -365,6 +365,7 @@
     <None Include="Resources\img_135335.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DRICON.ico" />
     <Content Include="icon.ico" />
     <Content Include="ICONDR.ico" />
     <Content Include="ICONDRKEY.ico" />

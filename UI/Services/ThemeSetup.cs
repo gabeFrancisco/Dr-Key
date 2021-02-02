@@ -322,6 +322,7 @@ namespace UI.Services
             serviceForm.txtTitle.BackColor = Color.FromName(config.Color);
             serviceForm.txtDescription.BackColor = Color.FromName(config.Color);
             serviceForm.btnSearch.BackColor = Color.FromName(config.Color);
+            serviceForm.btnAddService.Select();
 
             try
             {
